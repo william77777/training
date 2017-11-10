@@ -1,0 +1,70 @@
+Processes & Threads:
+-OS has mult procs and th
+-proc share core via time-splicing
+
+Processes
+-self-contained execution environment
+-own memory space
+-IPC 
+	-pipe
+	-socket
+	
+Threads
+-"lightweight processes"
+-requires fewer resources
+-exists within a process
+	-each process at least one thread
+	-threads share process resources
+	
+Thread objects
+-Thread class
+-Executor class
+
+Thread class
+-Runnable
+-Thread class implements Runnable
+
+Interrupts
+-defined behavior
+-interrupt->catch
+Status flag
+-Thread.interrupted resets flag
+-throwing InterruptedException resets flag
+-isInterrupted does not reset flag
+
+Synchronization
+-thread interference
+-memory inconsistency
+--happens-before relationship
+-sychronized
+--methods
+---suspends requester until requestee is done
+---sychronized keyword
+--intrinsic locks
+---acquire
+---release
+---happens automatically with synchronized
+---static methods
+----access to static fields associated with lock of the "Class" object
+----because static methods/fields are associated with the class and not the instance
+--statements
+---synchronized(Object obj) keyword
+---obj that provides intrinsic lock
+---used when you only want to synchronize a portion of a method
+---helpful in avoiding livness issues (don't want to hold up everything)
+--Reentrant sync
+---see recursion and synchronization
+
+
+
+
+
+
+
+Liveness
+-how efficient a thread is executed
+
+
+
+
+

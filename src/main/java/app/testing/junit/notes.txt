@@ -1,0 +1,7 @@
+Junit tests run in no particular order
+Use @Before to initialize stuff before each test
+
+Bulk Testing:
+@Parameter - return a collection of AOBs containing test parameters (can be different constructors)
+create a suitable constructor for each of the parameters
+Each test method in class will be executed for each of the parameters

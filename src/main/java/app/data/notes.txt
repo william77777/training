@@ -1,0 +1,25 @@
+https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html
+
+Heap:
+
+-array
+-in-place sorting
+
+Modification
+-insertion
+--insert at end
+--shift up
+-deletion
+--delete root
+--insert last element at root
+--shift down
+-rebalancing
+--occurs with every insertion/deletion
+-replacing
+--insert at root
+--shift down
+
+Positions:
+left-child(k): 2k+1
+right-child(k): 2k+2
+parent(k): k/2

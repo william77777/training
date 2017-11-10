@@ -1,0 +1,37 @@
+h1{
+	color: red;
+}
+
+.paragraph{
+	color: blue;
+}
+
+table,th,td{
+	border: 0.2em solid orange;
+	border-collapse: collapse;
+	padding: 0.3em;
+}
+
+th{
+	text-align: left;
+	text-shadow: aqua;
+}
+
+table#someTable{
+	background-color: aqua;
+}
+
+table#someTable tr:nth-child(even) {
+    background-color: green;
+}
+table#someTable tr:nth-child(odd) {
+    background-color: yellow;
+}
+table#someTable th {
+    color: white;
+    background-color: black;
+}
+
+ol{
+	list-style-type: lower-roman;
+}

@@ -1,0 +1,13 @@
+arr = []
+n = 0;
+
+insert(x):
+	arr[n] = x
+	n++
+	// balance
+	
+	
+	
+left-child(k): 2k+1
+right-child(k): 2k+2
+parent(k): k/2

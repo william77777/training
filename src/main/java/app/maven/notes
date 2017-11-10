@@ -1,0 +1,9 @@
+Building
+-recursive search subdirectories for pom
+
+Plugins
+-influences the implementation of each build phase
+-plugin goal
+--bound to zero or more phases
+--mvn clean dependency:copy-dependencies package
+-

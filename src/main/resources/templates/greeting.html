@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Handling Form Submission</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<!-- Need a form tag to submit post data -->
+	<form th:action="@{/greetings}" method="get">
+		<input type="submit" value="Get List"/>
+	</form>
+	<h1>List of greetings:</h1>
+	<ol th:each="greet : ${greetings}">
+		<li th:text="${greet.toString()}"></li>
+	</ol>
+
+	<h1>You entered:</h1>
+	<p th:text="'id: ' + ${greeting.id}" />
+	<p th:text="'content: ' + ${greeting.content}" />
+	<p th:text="${greeting.toString()}"></p>
+
+	<form th:action="@{/greeting}" th:object="${greeting}" method="post">
+		<p>
+			Id: <input type="text" th:field="*{id}" />
+		</p>
+		<p>
+			Message: <input type="text" th:field="*{content}" />
+		</p>
+		<p>
+			<input type="submit" value="Submit" /> <input type="reset"
+				value="Reset" />
+		</p>
+	</form>
+</body>
+</html>
